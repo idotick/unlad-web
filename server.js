@@ -11,5 +11,5 @@ app.use(express.static(path.join(__dirname, 'pages')));
 app.use(express.static(path.join(__dirname, 'public')));
   
 app.listen(port, () => {
-	console.log(`iskolar up on http://localhost:${port}`);
+	console.log(`iskolar homepage up on http://localhost:${port}`);
 })
