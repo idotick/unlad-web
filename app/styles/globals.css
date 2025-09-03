@@ -1,0 +1,30 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #1b1b20;
+	overflow-x: hidden;
+}
+
+* {
+	color: #fff6f2;
+	user-select: none;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+button {
+	background-color: #5888cb;
+	padding: 10px 30px 10px 30px;
+	font-size: 20px !important;
+	border-radius: 52px !important;
+	border: none;
+}
+
+button:hover {
+	background-color: #5460ff;
+}
