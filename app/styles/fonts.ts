@@ -5,7 +5,7 @@ export const poppins = Poppins({
 	subsets: ['latin']
 });
 
-export const muktaMalar = Mukta_Malar({
+export const mukta_malar = Mukta_Malar({
 	weight: ['400', '700'],
 	subsets: ['latin']
 });

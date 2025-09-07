@@ -1,0 +1,55 @@
+.above_the_fold {
+	height: 88%;
+}
+
+.below_the_fold {
+	height: 100vh;
+	padding: 50;
+	background-color: #1a1d1e;
+}
+
+.dotted_back {
+	background-image: url('/dots.png');
+	background-position: 0 0;
+	background-size: 70%;
+	background-repeat: repeat;
+	background-blend-mode: difference;
+}
+
+.horizontal_align {
+	display: flex;
+	flex-direction: row;
+}
+
+.vertical_align {
+	display: flex;
+	flex-direction: column;
+}
+
+.headline {
+	width: 35%;
+}
+
+.main_headline {
+	font-size: 35px;
+}
+
+.supporting_headline {
+	margin-bottom: 50px;
+	font-size: 15px;
+}
+
+.middle_text {
+	width: 50%;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.service_box {
+	width: 200px;
+	height: 200px;
+	margin: 10px 50px 10px 50px;
+	border-radius: 17;
+	border: 4px solid #323739;
+	background-color: #3b4042;
+}
