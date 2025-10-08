@@ -1,0 +1,18 @@
+.horizontal_align {
+	display: flex;
+	flex-direction: row;
+}
+
+.vertical_align {
+	display: flex;
+	flex-direction: column;
+}
+
+.small_header {
+	font-size: 25px;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}

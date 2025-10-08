@@ -11,23 +11,18 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #121214;
-	overflow: hidden;
-}
-
-main {
-	overflow: scroll;
-	height: 100vh;
-	padding-bottom: 7%;
+	overflow-x: hidden;
 }
 
 header {
 	display: flex;
 	flex: 1;
 	flex-direction: row;
-	height: 12%;
-	padding: 10px;
+	height: 10vh;
+	padding: 5px;
 	border-bottom: 2px solid #fff6f2;
 	background-color: #121214;
+	background-image: linear-gradient(to right, #4d4d5b, #1d1d20, #121214 33%, #000000);
 	justify-content: space-around;
 	align-items: center;
 }
@@ -35,14 +30,13 @@ header {
 header > h1 {
 	flex: 1.2;
 	margin: 0 0 0 120px;
-	font-size: 45px;
 }
 
 header > ul {
 	display: flex;
 	flex: 1;
 	flex-direction: row;
-	font-size: 20px;
+	font-size: 15px;
 	justify-content: center;
 	align-items: center;
 	list-style-type: none;
@@ -63,16 +57,39 @@ section {
 	align-items: center;
 }
 
+footer {
+	background-color: #1d1d20;
+	width: 100vw;
+	height: 200px;
+}
+
 button {
+	display: flex;
 	padding: 10px 30px 10px 30px;
 	border: none;
 	border-radius: 52px;
+	align-items: center;
+	justify-content: center;
 	background-color: #5888cb;
-	font-size: 20px;
+	font-size: 15px;
+}
+
+.button_icon {
+	margin-left: 5px;
 }
 
 button:hover {
 	background-color: #5460ff;
+}
+
+button:hover > .button_icon {
+	transform: translateX(10px);
+}
+
+div:has(.image_card) {
+	display: flex;
+	position: absolute;
+	width: 45%;
 }
 
 a {
@@ -82,4 +99,8 @@ a {
 
 span {
 	color: #433bff;
+}
+
+h1 {
+	font-size: 30px;
 }

@@ -1,11 +1,25 @@
 .above_the_fold {
-	height: 100%;
+	height: 90vh;
+	background-image: url('/dots.png'), radial-gradient(at 0 0, #4d4d5b, #1d1d20, #121214 33%, #000000);
+	background-position: 0, 0;
+	background-size: 70%, 100%;
+	background-repeat: repeat, no-repeat;
+	background-blend-mode: difference, normal;
 }
 
 .below_the_fold {
-	height: 100vh;
+	min-height: 100vh;
+	max-height: fit-content;
 	padding: 50px;
-	background-color: #1a1d1e;
+	background-color: #1d1d20;
+}
+
+.darker {
+	background-color: #121214;
+}
+
+.before_footer {
+	background-image: linear-gradient(to bottom, #121214 50%, #000000);
 }
 
 .dotted_back {
@@ -16,40 +30,56 @@
 	background-blend-mode: difference;
 }
 
-.horizontal_align {
-	display: flex;
-	flex-direction: row;
-}
-
-.vertical_align {
-	display: flex;
-	flex-direction: column;
-}
-
-.headline {
-	width: 35%;
-}
-
 .main_headline {
-	font-size: 35px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 50px;
+}
+
+.typewriter > p {
+	display: inline;
 }
 
 .supporting_headline {
+	width: 75%;
+	margin-bottom: 100px;
+	font-size: 14px;
+}
+
+div:has(.hero_selector) {
+	align-items: center;
+	justify-content: center;
+}
+
+.info_textbox {
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	margin: 300px 0 10px 50px;
+	background-color: #1d1d203c;
+}
+
+.info_text {
+	margin-left: 150px;
+	width: 100px;
+	text-align: right;
+}
+
+.info_icon {
+	position: absolute;
+	top: 10px;
+	left: 50px
+}
+
+.spaced_header {
 	margin-bottom: 50px;
-	font-size: 15px;
 }
 
-.middle_text {
-	width: 50%;
-	font-size: 20px;
-	font-weight: normal;
+.side_text {
+	width: 35%;
+	margin-right: 50px;
 }
 
-.service_box {
-	width: 200px;
-	height: 200px;
-	margin: 10px 50px 10px 50px;
-	border-radius: 17;
-	border: 4px solid #323739;
-	background-color: #3b4042;
+.paragraph {
+	font-size: 17.9px;
 }
